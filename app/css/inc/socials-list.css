@@ -1,0 +1,17 @@
+.socials-list {
+  margin: 0;
+  padding: 0; }
+  .socials-list__item {
+    letter-spacing: 0.1em;
+    line-height: 2.2;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 5px 0; }
+    .socials-list__item a {
+      color: #3c3c3c; }
+      .socials-list__item a:hover {
+        color: #ed1c24; }
+  .socials-list__icon {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+    padding-right: 10px; }

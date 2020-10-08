@@ -1,0 +1,49 @@
+@import "variables.scss";
+.form {
+    width: 100%;
+    &_width{
+        width: 70%;
+        margin: 40px auto;
+        margin-bottom: 20px;
+    }
+    &__title{
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: $size-title;
+        letter-spacing: 0.1em;
+    }
+    &__button {
+        text-transform: uppercase;
+        color: $effect;
+        font-size: $size-middle;
+        border: none;
+        background-color: transparent;
+        transition: 0.3s all;
+        letter-spacing: 0.1em;
+        padding: 7px 0;
+        &:hover {
+            text-decoration: underline;
+            transition: 0.3s all;
+        }
+    } 
+}
+.common-field {
+    .common-input ~  .valid-text {
+        font-weight: lighter;
+    }
+}
+.recommend-line {
+    font-size: $size-small;
+    color: $secondary;
+    line-height: 1.2;
+    &_position {
+        display: block;
+        position: relative;
+        top: -20px;
+    }
+}
+.add-file {
+    font-size: $size-small2;
+}

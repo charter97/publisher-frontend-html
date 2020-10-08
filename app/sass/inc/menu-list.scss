@@ -1,0 +1,67 @@
+@import "variables.scss";
+.menu-list {
+    width: 100%;
+    padding: 0;
+    padding-right: 50px;
+    position: relative;
+    border-top: 1px solid $surface;
+    border-bottom: 1px solid $surface;
+    height: 34px;
+    overflow: hidden;
+    transition: 0.3s all;
+    &__open {
+        height: auto;
+        transition: 0.3s all;
+        .icon-down .arrow-down  {
+            transform: rotate(-224deg);
+            top: 7px;
+        }
+    }
+    &__item {
+        display: inline-block;
+        position: relative;
+        padding-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+        font-size: $size-common;
+        text-transform: uppercase;
+        font-size: $size-small2;
+        letter-spacing: .25px;
+        &::before {
+            position: absolute;
+            content: ' ';
+            top: 5px;
+            left: -11px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: $dottsColor;
+            z-index: -1;
+        }
+    }
+}
+.icon-down {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $secondary2;
+    border-radius: 50%;
+    cursor: pointer;
+    .arrow-down {
+        position: absolute;
+        top: 4px;
+    }
+}
+.arrow-down {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid $secondary2;
+    border-left: 2px solid $secondary2;
+    transform: rotate(-45deg);
+}

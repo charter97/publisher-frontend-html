@@ -1,0 +1,81 @@
+@import "variables.scss";
+.search-icon {
+    &_margin-left{
+        margin-left: 30px;
+    }
+    svg {
+        path {
+            fill: $secondary2 !important;
+        }
+    }
+    a {
+        &:hover {
+            svg path {
+                fill: $primary !important;
+            }
+        }
+    }
+}
+.search-wrap {
+    display: none;
+    width: 100%;
+    background-color: $backgroundSearch;
+    padding: 30px 0;
+}
+.search-close {
+    font-size: $size-common;
+    text-transform: uppercase;
+    color: $secondary2;
+    background-color: transparent;
+    letter-spacing: 0.1em;
+    transition: 0.3s all;
+    svg {
+        path {
+            fill: $secondary2 !important;
+            transition: 0.3s all;
+        }
+    }
+    &:hover {
+        color: $primary;
+        transition: 0.3s all;
+        svg {
+            path {
+                fill: $primary !important;
+                transition: 0.3s all;
+            }
+        }
+    }
+}
+.search-form{
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+    background-color: $background;
+   &_width {
+       width: 60%;
+   }
+   &__input {
+    flex: auto;
+   }
+   &__button {
+    flex: 0 0 69px;
+    margin-left: 15px;
+   }
+}
+.search-input {
+    height: 31px;
+    border: 1px solid $effectDark;
+    padding: 3px 10px;
+    font-size: $size-middle;
+    &:focus {
+        outline: none;
+    }
+}
+.search-button {
+    border-radius: 2px;
+    text-align: center;
+    background-color: $effectDark;
+    svg path {
+        fill: $background !important;
+    }
+}

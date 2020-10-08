@@ -1,0 +1,79 @@
+.menu-list {
+  width: 100%;
+  padding: 0;
+  padding-right: 50px;
+  position: relative;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  height: 34px;
+  overflow: hidden;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all; }
+  .menu-list__open {
+    height: auto;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all; }
+    .menu-list__open .icon-down .arrow-down {
+      -webkit-transform: rotate(-224deg);
+          -ms-transform: rotate(-224deg);
+              transform: rotate(-224deg);
+      top: 7px; }
+  .menu-list__item {
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .25px; }
+    .menu-list__item::before {
+      position: absolute;
+      content: ' ';
+      top: 5px;
+      left: -11px;
+      width: 4px;
+      height: 4px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #dcdcdc;
+      z-index: -1; }
+
+.icon-down {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #737373;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer; }
+  .icon-down .arrow-down {
+    position: absolute;
+    top: 4px; }
+
+.arrow-down {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #737373;
+  border-left: 2px solid #737373;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }

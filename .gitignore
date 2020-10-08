@@ -1,0 +1,3 @@
+# Ignor folder with plugins
+node_modules/
+git_tutorial/

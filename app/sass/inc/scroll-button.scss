@@ -1,0 +1,16 @@
+@import "variables.scss";
+.scroll-button{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    text-align: center;
+    line-height: 39px;
+    border: 1px solid $scrollButton;
+    width: 35px;
+    height: 39px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: $scrollButton;
+}

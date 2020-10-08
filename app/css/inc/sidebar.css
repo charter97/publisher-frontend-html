@@ -1,0 +1,30 @@
+.sidebar {
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 30px; }
+  .sidebar .news__img {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100px;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px; }
+    .sidebar .news__img img {
+      max-height: 65px; }
+  .sidebar:last-child {
+    border-bottom: none; }
+  .sidebar .common-input {
+    border: 1px solid #999;
+    width: 100%;
+    height: 32px;
+    font-size: 1.2rem;
+    padding: 8px;
+    margin-bottom: 20px; }
+    .sidebar .common-input:focus {
+      outline: none;
+      border-color: #000000; }
+    .sidebar .common-input.error {
+      border-color: #6B0505; }
+    .sidebar .common-input.error ~ .valid-text {
+      background-color: #6B0505;
+      color: #fff;
+      margin-top: -20px;
+      margin-bottom: 20px;
+      font-weight: normal; }

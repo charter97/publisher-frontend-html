@@ -1,0 +1,103 @@
+@import "variables.scss";
+.post {
+    width: 100%;
+    padding-left: 90px;
+    color: $rarely-text;
+    font-size: $size-small2;
+    &__date {
+        color: $secondary2;
+        font-size: $size-small;
+        color: $secondary2;
+        letter-spacing: 0.08em;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        li {
+            display: inline-block;
+            padding: 2px 7px;
+            &:first-child {
+                border-right: 1px solid $surface ;
+                padding-left: 0;
+            }
+        }
+    }
+    &__main-img {
+        width: 360px;
+        margin-right: 40px;
+        margin-left: -90px;
+        float: left;
+    }
+    &__link {
+        color: $effect;
+        &:hover {
+            color: $effect;
+            text-decoration: underline;
+        }
+    }
+    &__bg {
+        background-color: $background2;
+        padding: 20px;
+        text-align: center;
+        margin: 20px 0;
+        img {
+            max-width: 100%;
+        }
+    }
+    h1 {
+        font-size: $size-large;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        margin-top: 15px;
+        margin-bottom: 17px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: $size-big;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: $size-title;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    h4 {
+        font-size: $size-middle2;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-size: $size-middle;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    h6 {
+        font-size: $sizeText;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: $size-middle;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        margin-top: 8px;
+    }
+}
+.post-footer {
+    margin-top: 60px;
+    font-size: $size-small2;
+    &__info {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+}

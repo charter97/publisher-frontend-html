@@ -6,6 +6,18 @@
         margin: 40px auto;
         margin-bottom: 20px;
     }
+    &_padding {
+        padding: 0 60px;
+        .common-field {
+            .fa-comments {
+                position: absolute;
+                left:-60px;
+                top: 5px;
+                color: $secondary;
+                font-size: 16px;
+            }
+        }
+    }
     &__title{
         margin-bottom: 20px;
         margin-top: 40px;
@@ -30,6 +42,7 @@
     } 
 }
 .common-field {
+    position: relative;
     .common-input ~  .valid-text {
         font-weight: lighter;
     }

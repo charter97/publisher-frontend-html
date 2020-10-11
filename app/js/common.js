@@ -26,4 +26,8 @@ $( function() {
     return false;
     
    });
+   $('#closeForm').click(function(){
+      $(this).parent().parent('#additionalCommentForm').slideUp();
+   });
+   
 });

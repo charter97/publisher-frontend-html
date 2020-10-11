@@ -4,6 +4,14 @@
     width: 70%;
     margin: 40px auto;
     margin-bottom: 20px; }
+  .form_padding {
+    padding: 0 60px; }
+    .form_padding .common-field .fa-comments {
+      position: absolute;
+      left: -60px;
+      top: 5px;
+      color: #a6a6a6;
+      font-size: 16px; }
   .form__title {
     margin-bottom: 20px;
     margin-top: 40px;
@@ -28,8 +36,10 @@
       -o-transition: 0.3s all;
       transition: 0.3s all; }
 
-.common-field .common-input ~ .valid-text {
-  font-weight: lighter; }
+.common-field {
+  position: relative; }
+  .common-field .common-input ~ .valid-text {
+    font-weight: lighter; }
 
 .recommend-line {
   font-size: 1.1rem;

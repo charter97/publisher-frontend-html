@@ -50,6 +50,11 @@ a {
     }
     &:visited {
         color: $visitedlinks;
+        transition: 0.3s all;
+        &:hover {
+            transition: 0.3s all;
+            color: $effect;
+        }
     }
 }
 button {
@@ -78,6 +83,7 @@ button {
         margin-bottom: 14px;
     }
 }
+
 .common-textarea {
     border: 1px solid $secondary2;
     width: 100%;
@@ -115,6 +121,7 @@ button {
         background-color: $buttonHover-bg;
     }
 }
+
 .valid-text {
     display: block;
     width: 100%;
@@ -125,6 +132,11 @@ button {
     margin-bottom: 20px;
     color:$effect;
     font-weight: lighter;
+    &__simple {
+        margin-top: -20px;
+        color: $secondary;
+        font-size: $size-small;
+    }
 }
 .color-bright {
     color: $color-bright !important;
@@ -142,6 +154,9 @@ button {
     letter-spacing: 0.1em;
     line-height: 1;
     font-size: $size-small;
+    &__link {
+        color: $effect;
+    }
 }
 .sub-title {
     font-size: $size-middle;
@@ -339,5 +354,38 @@ p {
             right: 25px;
             left: auto;
         }
+    }
+}
+.pluso {
+    margin: 15px 0;
+} 
+.amount {
+    display: inline-block;
+    padding: 4px 3px;
+    background-color: $effect;
+    color: #fff;
+}
+.view {
+    font-size: $size-small2;
+    line-height: 1.4;
+    color: $secondary2;
+}
+.separate-date {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    &__date {
+        padding: 4px 16px;
+        background-color: $secondary4;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: $size-small;
+        line-height: 1.5;
+    }
+    &__line {
+        position: relative;
+        border-bottom: 1px solid $surface;
+        top: -12px;
+        flex: auto;
     }
 }

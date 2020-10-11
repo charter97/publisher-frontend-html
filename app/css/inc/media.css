@@ -21,7 +21,11 @@
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 50%;
           -ms-flex: 0 0 50%;
-              flex: 0 0 50%; } }
+              flex: 0 0 50%; }
+  .post {
+    padding-left: 0; }
+    .post__main-img {
+      margin-left: 0; } }
 
 @media screen and (max-width: 767px) {
   .logo {
@@ -88,4 +92,23 @@
         -ms-flex-direction: column;
             flex-direction: column; }
   .common-label {
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+  .post__main-img {
+    width: 100%;
+    margin-right: 0; }
+  .post-footer {
+    margin-top: 20px; }
+  .form_padding {
+    padding-right: 0; }
+  .filter .common-select, .filter__button {
+    height: 34px; } }
+
+@media screen and (max-width: 400px) {
+  .comment {
+    padding-left: 0; }
+    .comment__star {
+      display: none; }
+  .form_padding {
+    padding-left: 0; }
+  .form_padding .common-field .fa-comments {
+    display: none; } }

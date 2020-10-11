@@ -1,0 +1,85 @@
+.post {
+  width: 100%;
+  padding-left: 90px;
+  color: #3c3c3c;
+  font-size: 1.2rem; }
+  .post__date {
+    color: #737373;
+    font-size: 1.1rem;
+    color: #737373;
+    letter-spacing: 0.08em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px; }
+    .post__date li {
+      display: inline-block;
+      padding: 2px 7px; }
+      .post__date li:first-child {
+        border-right: 1px solid gainsboro;
+        padding-left: 0; }
+  .post__main-img {
+    width: 360px;
+    margin-right: 40px;
+    margin-left: -90px;
+    float: left; }
+  .post__link {
+    color: #ed1c24; }
+    .post__link:hover {
+      color: #ed1c24;
+      text-decoration: underline; }
+  .post__bg {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0; }
+    .post__bg img {
+      max-width: 100%; }
+  .post h1 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    font-weight: bold; }
+  .post h2 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .post h3 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .post h4 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .post h5 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .post h6 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .post p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 8px; }
+
+.post-footer {
+  margin-top: 60px;
+  font-size: 1.2rem; }
+  .post-footer__info {
+    margin-top: 40px;
+    margin-bottom: 15px; }

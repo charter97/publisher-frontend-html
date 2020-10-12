@@ -38,7 +38,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-
+        'app/libs/jquery/dist/jquery.js',
+        'app/libs/slick-carousel/slick/slick.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

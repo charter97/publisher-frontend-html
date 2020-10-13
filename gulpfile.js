@@ -73,6 +73,8 @@ gulp.task('watch', gulp.series('html', 'sass', 'styles', function () {
     })
 );
 
+gulp.task('build', gulp.series('clean', 'clear', 'html', 'img', 'sass', 'styles', 'scripts'));
+
 // gulp.task('build', gulp.series('html', 'img', 'sass', 'styles', function () {
 //     var buildCss = gulp.src([
 //         'app/css/main.min.css',

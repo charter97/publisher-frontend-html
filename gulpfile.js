@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
-    cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
@@ -21,20 +20,13 @@ gulp.task('html', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('app/sass/**/*.scss')
-        .pipe(sass())
+    return gulp.src('app/sass/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-        .pipe(gulp.dest('app/css'));
-});
-
-gulp.task('styles', function () {
-    return gulp.src([
-        'app/css/libs.css',
-        'app/css/main.css'
-    ])
-        .pipe(cssnano()) // Сжимает минимизирует файлы
-        .pipe(rename({suffix: '.min'})) // Задаем название нового минимизированного файла
-        .pipe(gulp.dest('app/css'));
+        .pipe(sourcemaps.write())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('scripts', function () {
@@ -66,14 +58,13 @@ gulp.task('img', function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', gulp.series('html', 'sass', 'styles', function () {
+gulp.task('watch', gulp.series('html', 'sass', function () {
         gulp.watch('app/html/**/*.html', gulp.series('html'));
         gulp.watch('app/sass/**/*.scss', gulp.series('sass'));
-        gulp.watch(['app/css/main.css', 'app/css/libs.css'], gulp.series('styles'));
     })
 );
 
-gulp.task('build', gulp.series('clean', 'clear', 'html', 'img', 'sass', 'styles', 'scripts'));
+gulp.task('build', gulp.series('clean', 'clear', 'html', 'img', 'sass', 'scripts'));
 
 // gulp.task('build', gulp.series('html', 'img', 'sass', 'styles', function () {
 //     var buildCss = gulp.src([

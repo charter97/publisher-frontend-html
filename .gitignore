@@ -1,3 +1,11 @@
-# Ignor folder with plugins
+# Ignore OS/IDE files
+.idea
+.DS_Store
+thumbs.db
+
+# Ignore folder with plugins
 node_modules/
 git_tutorial/
+
+# Ignore build artifacts
+dist

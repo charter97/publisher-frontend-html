@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 gulp.task('html', function () {
     return gulp.src('app/html/*.html')
         .pipe(fileinclude())
-        .pipe(gulp.dest('app'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sass', function () {

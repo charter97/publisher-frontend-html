@@ -73,24 +73,24 @@ gulp.task('watch', gulp.series('html', 'sass', 'styles', function () {
     })
 );
 
-gulp.task('build', gulp.series('html', 'img', 'sass', 'styles', function () {
-    var buildCss = gulp.src([
-        'app/css/main.min.css',
-        'app/css/libs.min.css'
-    ])
-        .pipe(gulp.dest('dist/css'));
-
-    var buildFonts = gulp.src([
-        'app/fonts/**/*'
-    ])
-        .pipe(gulp.dest('dist/fonts'));
-
-    var buildHtml = gulp.src('app/*.html')
-        .pipe(gulp.dest('dist'));
-
-    return buildCss;
-    return buildFonts;
-    return buildJs;
-    return buildHtml;
-}));
+// gulp.task('build', gulp.series('html', 'img', 'sass', 'styles', function () {
+//     var buildCss = gulp.src([
+//         'app/css/main.min.css',
+//         'app/css/libs.min.css'
+//     ])
+//         .pipe(gulp.dest('dist/css'));
+//
+//     var buildFonts = gulp.src([
+//         'app/fonts/**/*'
+//     ])
+//         .pipe(gulp.dest('dist/fonts'));
+//
+//     var buildHtml = gulp.src('app/*.html')
+//         .pipe(gulp.dest('dist'));
+//
+//     return buildCss;
+//     return buildFonts;
+//     return buildJs;
+//     return buildHtml;
+// }));
 

@@ -32,7 +32,8 @@ gulp.task('sass', function () {
 gulp.task('scripts', function () {
     return gulp.src([
         'app/libs/jquery/dist/jquery.js',
-        'app/libs/slick-carousel/slick/slick.min.js'
+        'app/libs/slick-carousel/slick/slick.min.js',
+        'app/js/common.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())

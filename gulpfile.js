@@ -34,9 +34,9 @@ gulp.task('scripts', function () {
         'app/libs/jquery/dist/jquery.js',
         'app/libs/slick-carousel/slick/slick.min.js'
     ])
-        .pipe(concat('libs.min.js'))
+        .pipe(concat('main.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('app/js'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('clean', function () {
@@ -64,26 +64,11 @@ gulp.task('watch', gulp.series('html', 'sass', function () {
     })
 );
 
-gulp.task('build', gulp.series('clean', 'clear', 'html', 'img', 'sass', 'scripts'));
-
-// gulp.task('build', gulp.series('html', 'img', 'sass', 'styles', function () {
-//     var buildCss = gulp.src([
-//         'app/css/main.min.css',
-//         'app/css/libs.min.css'
-//     ])
-//         .pipe(gulp.dest('dist/css'));
-//
-//     var buildFonts = gulp.src([
-//         'app/fonts/**/*'
-//     ])
-//         .pipe(gulp.dest('dist/fonts'));
-//
-//     var buildHtml = gulp.src('app/*.html')
-//         .pipe(gulp.dest('dist'));
-//
-//     return buildCss;
-//     return buildFonts;
-//     return buildJs;
-//     return buildHtml;
-// }));
-
+gulp.task('build', gulp.series(
+    'clean',
+    'clear',
+    'html',
+    'sass',
+    'img',
+    'scripts'
+));

@@ -29,6 +29,11 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('fonts', function () {
+    return gulp.src('app/fonts/fontello.*')
+        .pipe(gulp.dest('dist/css/fonts'));
+});
+
 gulp.task('scripts', function () {
     return gulp.src([
         'app/libs/jquery/dist/jquery.js',
@@ -70,6 +75,7 @@ gulp.task('build', gulp.series(
     'clear',
     'html',
     'sass',
+    'fonts',
     'img',
     'scripts'
 ));

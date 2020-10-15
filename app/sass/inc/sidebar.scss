@@ -2,6 +2,27 @@
 .sidebar {
     border-bottom: 1px solid $surface;
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    &__sticky {
+        position: sticky;
+        top: 0;
+    }
+    .news {
+        &:last-child {
+            margin-bottom: 0;
+            .news__title {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    .socials-list {
+        &__item {
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+    }
     .news__img {
         flex: 0 0 100px;
         img {
@@ -10,6 +31,9 @@
     }
     &:last-child {
         border-bottom: none;
+    }
+    &:first-child {
+        border-bottom: 1px solid $surface;
     }
     .common-input {
         border: 1px solid $visitedlinks;

@@ -6,6 +6,24 @@
         max-width: 1190px;
     }
 }
+@media (min-width: 1025px) {
+    .desck-hidden {
+        display: none;
+    }
+}
+@media (max-width: 1165px) {
+    .art-block {
+        &:last-child{
+            display: none;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .mobile-visible {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 991px)  {
     .art-block__title {
         font-size: 0.75rem;
@@ -16,17 +34,40 @@
     .article-title {
         font-size: 1.3rem;
     }
-    .sidebar-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        .sidebar {
-            flex: 0 0 50%;
+    .sidebar {
+        &__sticky {
+            position: static;
         }
+    }
+    .sidebar-wrap {
+        padding-left: 0;
+        padding-right: 0;
     }
     .post {
         padding-left: 0;
         &__main-img {
             margin-left: 0;
+        }
+    }
+    .row-block {
+        display: flex;
+    }
+    .main-page .page-nav {
+        flex-wrap: wrap;
+        .nav-button__next {
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .nav-button__prev, .nav-button__next {
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+@media (max-width: 885px) {
+    .art-block {
+        &:last-child, &:nth-last-child(2){
+            display: none;
         }
     }
 }
@@ -72,6 +113,11 @@
             flex: 0 0 100%;
         }
     }
+    .main-page .sidebar-wrap {
+        .sidebar {
+            flex: 0 0 100%;
+        }
+    }
     .page-nav {
         margin-bottom: 35px;
         flex-wrap: wrap;
@@ -86,10 +132,10 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-    .nav-button__next svg {
+    .nav-button__next i {
         right: 14px;
     }
-    .nav-button__prev svg {
+    .nav-button__prev i {
         left: 15px;
     }
     .banner-info__title .article-title {
@@ -116,6 +162,25 @@
     }
     .filter .common-select, .filter__button {
         height: 34px;
+    }
+    .main-page .news__img {
+        display: none;
+    }
+    .menu-list__mobile-title {
+        display: block;
+    }
+    .tabs-list {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .slider {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    .mobile-link {
+        display: block;
     }
 }
 @media screen and (max-width: 400px)  {

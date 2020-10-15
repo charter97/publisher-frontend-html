@@ -3,17 +3,13 @@
     &_margin-left{
         margin-left: 30px;
     }
-    svg {
-        path {
-            fill: $secondary2 !important;
-        }
-    }
     a {
         &:hover {
-            svg path {
-                fill: $primary !important;
-            }
+            color: $primary;
         }
+    }
+    .font-search {
+        font-size: $size-middle;
     }
 }
 .search-wrap {
@@ -29,21 +25,14 @@
     background-color: transparent;
     letter-spacing: 0.1em;
     transition: 0.3s all;
-    svg {
-        path {
-            fill: $secondary2 !important;
-            transition: 0.3s all;
-        }
+    .font-cancel {
+        font-size: $size-middle;
+        position: relative;
+        top: 1px;
     }
     &:hover {
         color: $primary;
         transition: 0.3s all;
-        svg {
-            path {
-                fill: $primary !important;
-                transition: 0.3s all;
-            }
-        }
     }
 }
 .search-form{
@@ -60,6 +49,10 @@
    &__button {
     flex: 0 0 69px;
     margin-left: 15px;
+    .font-search {
+        color: #fff;
+        font-size: $sizeText;
+    }
    }
 }
 .search-input {

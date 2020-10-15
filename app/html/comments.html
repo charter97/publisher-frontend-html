@@ -2,8 +2,8 @@
 @@include('inc/scroll-button.html')
 <main>
     <div class="container">
-        <div class="row row-block clearfix">
-            <div class="col-12 col-lg-8 pb-5 px-0 float-left">
+        <div class="row">
+            <div class="col-12 col-lg-8 pb-5 px-0 ">
                <div class="post">
                    <h1>Лошица вышла на вечерний протест</h1>
                    <ul class="post__date">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                    <div id="additionalCommentForm">
-                    <h3 class="form__title mb-5 d-flex align-items-center">НАПИСАТЬ КОММЕНТАРИЙ <span id="closeForm" class="close-form ml-auto"><i class="font-times" aria-hidden="true"></i></span></h3>
+                    <h3 class="form__title mb-5 d-flex align-items-center">НАПИСАТЬ КОММЕНТАРИЙ <span id="closeForm" class="close-form ml-auto"><i class="font-cancel" aria-hidden="true"></i></span></h3>
                     @@include('inc/comment-form.html')
                    </div>
                     <div class="comment sub-comment">
@@ -118,8 +118,8 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-4 float-right sidebar-wrap ">
-                <section class="sidebar">
+            <div class="col-12 col-lg-4 sidebar-wrap ">
+                <section class="sidebar sidebar__sticky">
                     <h3 class="title">ПОПУЛЯРНОЕ ЗА НЕДЕЛЮ</h3>
                         <article class="news__title full-width mb-3">
                             <span class="time color-light">12:00</span>
@@ -137,11 +137,33 @@
                             <span class="view">18 000 <i class="font-eye" aria-hidden="true"></i> </span>
                         </article>
                 </section>
+                <section class="sidebar desck-hidden mobile-visible">
+                    <h3 class="title">мнение</h3>
+                    <a href="#3" class="news align-items-start">
+                        <div class="news__img" href="#"><img src="img/bg.jpg" alt=""></div>
+                         <article class="news__title pl-3">
+                             <div href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Протесты лидеров</div>
+                             <div class="auth-name">Андрей Санников</div>
+                         </article>
+                        </a>
+                     <a href="#3" class="news align-items-start">
+                        <div class="news__img" href="#"><img src="img/bg.jpg" alt=""></div>
+                         <article class="news__title pl-3">
+                             <div href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Против усатого маразматика восстала вся страна</div>
+                             <div class="auth-name">Андрей Санников</div>
+                         </article>
+                    </a>
+                     <a href="#3" class="news align-items-start">
+                        <div class="news__img" href="#"><img src="img/bg.jpg" alt=""></div>
+                         <article class="news__title pl-3">
+                             <div href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Протесты лидеров</div>
+                             <div class="auth-name">Андрей Санников</div>
+                         </article>
+                     </a>
+                </section>
             </div>
             
         </div>
     </div>
 </main>
 @@include('inc/footer.html')
-</body>
-</html>

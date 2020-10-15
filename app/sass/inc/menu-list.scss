@@ -39,6 +39,13 @@
             z-index: -1;
         }
     }
+    &__mobile-title {
+        display: none;
+        color: $effect;
+        letter-spacing: 0.1em;
+        font-size: $size-small2;
+        margin-top: 12px;
+    }
 }
 .icon-down {
     position: absolute;

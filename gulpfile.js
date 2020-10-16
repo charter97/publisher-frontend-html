@@ -1,16 +1,16 @@
 'use strict';
 
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglifyjs'),
-    rename = require('gulp-rename'),
+var
+    gulp = require('gulp'),
     del = require('del'),
-    imagemin = require('gulp-imagemin'),
-    imagequant = require('imagemin-pngquant'),
-    cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer'),
     fileinclude = require('gulp-file-include'),
+    imagemin = require('gulp-imagemin'),
+    rename = require('gulp-rename'),
+    sass = require('gulp-sass'),
+    uglify = require('gulp-uglifyjs'),
+    imagequant = require('imagemin-pngquant'),
+    concat = require('gulp-concat'),
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('html', function () {
@@ -49,18 +49,14 @@ gulp.task('clean', function () {
     return del('dist');
 });
 
-gulp.task('clear', function () {
-    return cache.clearAll();
-});
-
 gulp.task('img', function () {
     return gulp.src('app/img/**/*')
-        .pipe(cache(imagemin({
+        .pipe(imagemin({
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             une: [imagequant()]
-        })))
+        }))
         .pipe(gulp.dest('dist/img'));
 });
 
@@ -72,7 +68,6 @@ gulp.task('watch', gulp.series('html', 'sass', function () {
 
 gulp.task('build', gulp.series(
     'clean',
-    'clear',
     'html',
     'sass',
     'fonts',

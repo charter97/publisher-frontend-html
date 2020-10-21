@@ -1,28 +1,28 @@
-<form class="form form_padding" action="">
-    <label class="common-field d-flex" for="#name">
+<form class="form form_padding" action="post">
+    <label class="common-field d-flex" for="name">
         <span class="common-label flex-shrink-0">Имя Фамилия</span>
-        <div class="w-100">
+        <span class="w-100 block">
             <input class="common-input" id="name" type="text">
-        </div>
+        </span>
         <i class="font-comments" aria-hidden="true"></i>
     </label>
-    <label class="common-field d-flex" for="#email">
+    <label class="common-field d-flex" for="email">
         <span class="common-label flex-shrink-0">E-mail</span>
-        <div class="w-100">
+        <span class="w-100 block">
             <input class="common-input" id="email" type="email">
             <span class="valid-text valid-text__simple pl-0">E-mail не будет опубликован</span>
-        </div>
+        </span>
     </label>
-    <label class="common-field d-flex" for="#message">
+    <label class="common-field d-flex" for="message">
         <span class="common-label flex-shrink-0">Сообщение</span>
-        <div class="w-100">
-            <textarea class="common-input common-textarea mb-2" name="" id="message" cols="30" rows="15"></textarea>
-        </div>
+        <span class="w-100 block">
+            <textarea class="common-input common-textarea mb-2" name="message" id="message" cols="30" rows="15"></textarea>
+        </span>
     </label>
-    <label class="common-field d-flex" for="">
+    <label class="common-field d-flex" for="send">
         <span class="common-label flex-shrink-0"></span>
-        <div class="w-100">
-            <button class="form__button">Отправить</button>
-        </div>
+        <span class="w-100 block">
+            <button id="send" class="form__button">Отправить</button>
+        </span>
     </label>
 </form>

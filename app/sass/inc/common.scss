@@ -78,6 +78,7 @@ button {
         border-color: $effect;
     }
     &.error ~ .valid-text {
+        display: block;
         color:$effect;
         margin-top: -25px;
         margin-bottom: 14px;
@@ -121,9 +122,11 @@ button {
         background-color: $buttonHover-bg;
     }
 }
-
-.valid-text {
+.block {
     display: block;
+}
+.valid-text {
+    display: none;
     width: 100%;
     font-size: $size-small2;
     font-weight: bold;
@@ -136,6 +139,9 @@ button {
         margin-top: -20px;
         color: $secondary;
         font-size: $size-small;
+    }
+    &__error {
+        display: block;
     }
 }
 .color-bright {
@@ -292,16 +298,26 @@ p {
     justify-content: space-between;
     margin-bottom: 15px;
     border-bottom: 1px solid $surface;
+    .nav-item {
+        flex: 0 0 33%;
+        text-align: center;
+        list-style-type: none;
+        margin-bottom: 0;
+        .nav-link {
+            border: none;
+            border-radius: 0 !important;
+        }
+    }
     &__item {
         padding: 5px 10px;
-        flex: 0 0 33%;
+        width: 100%;
         text-align: center;
         color: $secondary2;
         line-height: $size-small2;
         text-transform: uppercase;
         &.active {
-            background-color: $surface;
-            color: $primary;
+            background-color: $surface !important;
+            color: $primary !important;
         }
         &:hover {
             color: $primary;

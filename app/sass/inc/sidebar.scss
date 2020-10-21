@@ -1,12 +1,17 @@
 @import "variables.scss";
 .sidebar {
     border-bottom: 1px solid $surface;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
     background-color: #fff;
     &__sticky {
         position: sticky;
         top: 0;
+    }
+    .news__title {
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
     }
     .news {
         &:last-child {

@@ -5,6 +5,11 @@
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1190px;
     }
+    .sidebar-wrap {
+        width: 366px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media (min-width: 1025px) {
     .desck-hidden {

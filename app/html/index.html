@@ -1,7 +1,7 @@
 @@include('inc/header.html')
 @@include('inc/scroll-button.html')
 <main class="main-page">
-    <div class="container">
+    <div class="container-lg">
         <div class="row row-block clearfix">
             <div class="col-12 col-lg-8 pb-5 float-left order-1 order-lg-1 ">
                 <div class="row">
@@ -9,111 +9,150 @@
                        <a class="banner-img" href="#">
                             <img src="img/bg.jpg" alt="">
                        </a>
-                       <article>
+                       <div>
                            <span class="time color-light">11:30</span>
                            <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title title-big">В Минске прошел Марш пенсионеров</a>
                            <div class="sub-title my-4">Участники акции требовали честных выборов.<a class="color-bright pl-3" href="#">56</a></div>
-                       </article>
+                       </div>
                     </div>
                     <div class="col-12 col-md-6 px-0 px-md-3">
-                        <div class="tabs-list">
-                            <a class="tabs-list__item" href="#">Главное</a>
-                            <a class="tabs-list__item active" href="#">Популярное</a>
-                            <a class="tabs-list__item" href="#">Обсуждаемое</a>
-                        </div>
-                        <div class="news">
-                           <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
-                            <article class="news__title pl-2">
-                                <span class="time color-light">11:30</span>
-                                <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
-                                <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
-                            </article>
-                        </div>
-                        <div class="news">
-                            <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
-                             <article class="news__title pl-2">
-                                 <span class="time color-light">11:30</span>
-                                 <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
-                                 <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
-                             </article>
-                         </div>
+                        <ul class="nav nav-tabs tabs-list" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link tabs-list__item active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Главное</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link tabs-list__item" id="poppular-tab" data-toggle="tab" href="#poppular" role="tab" aria-controls="poppular" aria-selected="false">Популярное</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link tabs-list__item" id="discussion-tab" data-toggle="tab" href="#discussion" role="tab" aria-controls="discussion" aria-selected="false">Обсуждаемое</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="news">
+                                    <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
+                                     <div class="news__title pl-2">
+                                         <span class="time color-light">11:30</span>
+                                         <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Прокомментируйте первым!»</a>
+                                         <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
+                                     </div>
+                                 </div>
+                                 <div class="news">
+                                     <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
+                                      <div class="news__title pl-2">
+                                          <span class="time color-light">11:30</span>
+                                          <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Используйте event.target»</a>
+                                          <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
+                                      </div>
+                                  </div>
+                            </div>
+                            <div class="tab-pane" id="poppular" role="tabpanel" aria-labelledby="poppular-tab">
+                                <div class="news">
+                                    <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
+                                     <div class="news__title pl-2">
+                                         <span class="time color-light">13:34</span>
+                                         <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Мы хотим исправить»</a>
+                                         <span class="news__material">Видео<a class="color-bright pl-2" href="#">32</a></span>
+                                     </div>
+                                 </div>
+                                 <div class="news">
+                                     <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
+                                      <div class="news__title pl-2">
+                                          <span class="time color-light">11:30</span>
+                                          <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
+                                          <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
+                                      </div>
+                                  </div>
+                            </div>
+                            <div class="tab-pane" id="discussion" role="tabpanel" aria-labelledby="discussion-tab">
+                                <div class="news">
+                                    <a class="news__img" href="#"><img src="img/bg.jpg" alt=""></a>
+                                     <div class="news__title pl-2">
+                                         <span class="time color-light">01:45</span>
+                                         <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Это событие запускается при показе вкладки после »</a>
+                                         <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
+                                     </div>
+                                 </div>
+                            </div>
+                        </div> 
+                       
                     </div>
                     <div class="col-12 px-0 pr-md-4 mt-5 mb-1">
                         <h1 style="font-size: 50px; text-align: center; border: 1px solid red; background-color: aqua;">Здесь будет реклама</h1>
                     </div>
                 </div><!--/.row-->
             </div>
-            <div class="col-12 col-md-4 col-lg-4 float-right sidebar-wrap order-3 order-lg-2 mobile-hidden">
-                <section class="sidebar">
+            <div class="col-12 col-md-6 col-lg-4 float-right sidebar-wrap order-3 order-lg-2 mobile-hidden">
+                <div class="sidebar">
                     <h3 class="title">интервью</h3>
                     <a href="#3" class="news align-items-start">
-                        <div class="news__img" href="#"><img src="img/bg.jpg" alt=""></div>
-                         <article class="news__title pl-3">
-                             <div href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Протесты лидеров</div>
+                        <div class="news__img"><img src="img/bg.jpg" alt=""></div>
+                         <div class="news__title pl-3">
+                             <div class="article-title">Протесты лидеров</div>
                              <div class="auth-name">Андрей Санников</div>
-                         </article>
+                         </div>
                         </a>
                      <a href="#3" class="news align-items-start">
-                        <div class="news__img" href="#"><img src="img/bg.jpg" alt=""></div>
-                         <article class="news__title pl-3">
-                             <div href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Против усатого маразматика восстала вся страна</div>
+                        <div class="news__img"><img src="img/bg.jpg" alt=""></div>
+                         <div class="news__title pl-3">
+                             <div class="article-title">Против усатого маразматика восстала вся страна</div>
                              <div class="auth-name">Андрей Санников</div>
-                         </article>
+                         </div>
                     </a>
                      <a href="#3" class="news align-items-start">
-                        <div class="news__img" href="#"><img src="img/bg.jpg" alt=""></div>
-                         <article class="news__title pl-3">
-                             <div href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Протесты лидеров</div>
+                        <div class="news__img"><img src="img/bg.jpg" alt=""></div>
+                         <div class="news__title pl-3">
+                             <div class="article-title">Протесты лидеров</div>
                              <div class="auth-name">Андрей Санников</div>
-                         </article>
+                         </div>
                      </a>
-                </section>
-                <section class="sidebar">
+                </div>
+                <div class="sidebar">
                     <h3 class="title">Фото и видео</h3>
                     <div class="news flex-column">
-                        <a href="#4" class="banner-img" href="#">
+                        <a href="#4" class="banner-img">
                             <img src="img/bg.jpg" alt="">
                             <i class="banner-img__icon font-camera"></i>
                         </a>
-                        <article class="news__title full-width mb-2">
+                        <div class="news__title full-width mb-2">
                             <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title article-title_grey">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
                             <a class="color-bright pl-2" href="#">32</a>
-                        </article>
+                        </div>
                      </div>
                      <div class="news flex-column">
-                        <a href="#4" class="banner-img" href="#">
+                        <a href="#4" class="banner-img">
                             <img src="img/bg.jpg" alt="">
                             <i class="banner-img__icon font-video-chat"></i>
                         </a>
-                        <article class="news__title full-width mb-2">
+                        <div class="news__title full-width mb-2">
                             <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title article-title_grey">Максим Кац: Это победа!</a>
                             <a class="color-bright pl-2" href="#">17</a>
-                        </article>
+                        </div>
                      </div>
                      <div class="news flex-column">
-                        <a href="#4" class="banner-img" href="#"><img src="img/bg.jpg" alt=""></a>
-                        <article class="news__title full-width mb-2">
+                        <a href="#4" class="banner-img"><img src="img/bg.jpg" alt=""></a>
+                        <div class="news__title full-width mb-2">
                             <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title article-title_grey">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
                             <a class="color-bright pl-2" href="#">32</a>
-                        </article>
+                        </div>
                      </div>
-                </section>
-                <section class="sidebar">
+                </div>
+                <div class="sidebar">
                     <h3 class="title">обсуждаемое за неделю</h3>
-                        <article class="news__title full-width news__title_margin-bot">
+                        <div class="news__title full-width news__title_margin-bot">
                             <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title article-title_size-middle article-title_grey">Микросанкции для макронегодяев</a>
                             <a class="color-bright pl-2" href="#">99</a>
-                        </article>
-                        <article class="news__title full-width news__title_margin-bot">
+                        </div>
+                        <div class="news__title full-width news__title_margin-bot">
                             <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title article-title_size-middle article-title_grey">Микросанкции для макронегодяев</a>
                             <a class="color-bright pl-2" href="#">99</a>
-                        </article>
-                        <article class="news__title full-width news__title_margin-bot">
+                        </div>
+                        <div class="news__title full-width news__title_margin-bot">
                             <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title article-title_size-middle article-title_grey">В Гродно караевцы задержали 13-летнюю девочку и распылили ей в лицо газ</a>
                             <a class="color-bright pl-2" href="#">17</a>
-                        </article>
-                </section>
-                <section class="sidebar">
+                        </div>
+                </div>
+                <div class="sidebar">
                     <h3 class="title">Подписки</h3>
                     <div class="row">
                         <div class="col-md-6">
@@ -123,65 +162,65 @@
                             @@include('inc/socials-list.html')
                         </div>
                     </div>
-                </section>
-                <section class="sidebar">
-                   <form action="">
+                </div>
+                <div class="sidebar">
+                   <form action="post">
                        <input class="common-input error" placeholder="E-mail" type="text">
                        <span class="valid-text">This field is required.</span>
                        <button class="common-button" type="submit">подписка</button>
                    </form>
-                </section>
+                </div>
             </div><!--/.sidebar-wrap-->
-            <div class="col-12 col-md-8 col-lg-8 pl-0 pt-lg-5 mt-lg-5 order-lg-3 order-2 float-left">
+            <div class="col-12 col-md-6 col-lg-8 pl-0 pt-lg-5 mt-lg-5 order-lg-3 order-2 float-left">
                 <h3 class="title pb-5 pb-sm-3">последние новости</h3>
-                <section class="news align-items-start mb-4 pb-sm-3">
+                <div class="news align-items-start mb-4 pb-sm-3">
                     <span class="time color-light">12:55</span>
                     <a href="#" class="news__img mobile-hidden">
                         <img src="img/bg.jpg" alt="">
                     </a>
                    <div class="px-3">
-                        <a href="#22" class="article-title article-title_size" href="#">Жители Шабанов вышли на акцию с национальными флагами</a>
+                        <a href="#22" class="article-title article-title_size">Жители Шабанов вышли на акцию с национальными флагами</a>
                         <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
                         <div class="sub-title color-light-black pt-2">Участники акции требовали честных выборов.</div>
                    </div>
-                </section>
-                <section class="news align-items-start mb-4 pb-sm-3">
+                </div>
+                <div class="news align-items-start mb-4 pb-sm-3">
                     <span class="time color-light">12:55</span>
                     <a href="#" class="news__img mobile-hidden">
                         <img src="img/bg.jpg" alt="">
                     </a>
                    <div class="px-3">
-                        <a href="#22" class="article-title article-title_size" href="#">Жители Шабанов вышли на акцию с национальными флагами</a>
+                        <a href="#22" class="article-title article-title_size">Жители Шабанов вышли на акцию с национальными флагами</a>
                         <span class="news__material">Фото<a class="color-bright pl-2" href="#">2</a></span>
                         <div class="sub-title color-light-black pt-2">Участники акции требовали честных выборов.</div>
                    </div>
-                </section>
+                </div>
                 <div class="separate-date">
                     <div class="separate-date__date">10 ОКТЯБРЯ, СУББОТА</div>
                     <div class="separate-date__line"></div>
                 </div>
-                <section class="news align-items-start mb-4 pb-sm-3">
+                <div class="news align-items-start mb-4 pb-sm-3">
                     <span class="time color-light">12:55</span>
                     <a href="#" class="news__img mobile-hidden">
                         <img src="img/bg.jpg" alt="">
                     </a>
                    <div class="px-3">
-                        <a href="#22" class="article-title article-title_size" href="#">Жители Шабанов вышли на акцию с национальными флагами</a>
+                        <a href="#22" class="article-title article-title_size">Жители Шабанов вышли на акцию с национальными флагами</a>
                         <span class="news__material">Фото<a class="color-bright pl-2" href="#">32</a></span>
                         <div class="sub-title color-light-black pt-2">Участники акции требовали честных выборов.</div>
                    </div>
-                </section>
-                <section class="news align-items-start mb-4 pb-sm-3">
+                </div>
+                <div class="news align-items-start mb-4 pb-sm-3">
                     <span class="time color-light">12:55</span>
                     <a href="#" class="news__img mobile-hidden">
                         <img src="img/bg.jpg" alt="">
                     </a>
                    <div class="px-3">
-                        <a href="#22" class="article-title article-title_size" href="#">Жители Шабанов вышли на акцию с национальными флагами</a>
+                        <a href="#22" class="article-title article-title_size" >Жители Шабанов вышли на акцию с национальными флагами</a>
                         <span class="news__material">Фото<a class="color-bright pl-2" href="#">2</a></span>
                         <div class="sub-title color-light-black pt-2">Участники акции требовали честных выборов.</div>
                    </div>
-                </section>
+                </div>
                 <div class="page-nav">
                     <a class="nav-button nav-button__prev " href="#1">
                         <i class="font-left"></i>
@@ -204,22 +243,22 @@
                             <img src="img/bg.jpg" alt="">
                             <div class="banner-info__title">
                                 <span class="time color-light">11:30</span>
-                                <span href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">Наталья Радина: Всегда знала, что белорусы покажут свою силу</span>
-                                <span class="color-bright pl-2" href="#">32</span>
+                                <span class="article-title">Наталья Радина: Всегда знала, что белорусы покажут свою силу</span>
+                                <span class="color-bright pl-2">32</span>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <article class="news__title pl-2 mb-4 pb-2">
+                        <div class="news__title pl-2 mb-4 pb-2">
                             <span class="time color-light pr-1">11:30</span>
-                            <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
+                            <a class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
                             <a class="color-bright pl-2" href="#">32</a>
-                        </article>
-                        <article class="news__title pl-2 mb-4 pb-2">
+                        </div>
+                        <div class="news__title pl-2 mb-4 pb-2">
                             <span class="time color-light pr-1">11:30</span>
-                            <a href="https://www.youtube.com/watch?v=2mSVWFrmQVo&list=RDyxZdPqXCQHk&index=16" class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
+                            <a class="article-title">«Мы хотим исправить ошибку, которую допустили 26 лет назад»</a>
                             <a class="color-bright pl-2" href="#">32</a>
-                        </article>
+                        </div>
                     </div>
                 </div><!--/.row-->
             </div><!--/.col-12-->

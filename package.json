@@ -1,13 +1,5 @@
 {
-  "name": "test_project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Viktoria Rudenko",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^4.0.2",
@@ -20,6 +12,5 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^6.0.1"
-  },
-  "dependencies": {}
+  }
 }

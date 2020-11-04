@@ -4,8 +4,8 @@
 thumbs.db
 
 # Ignore folder with plugins
-node_modules/
-git_tutorial/
+node_modules
+git_tutorial
 
 # Ignore build artifacts
 dist

@@ -12,5 +12,10 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^6.0.1"
+  },
+  "jshintConfig": {
+    "globalstrict": true,
+    "esversion": 8,
+    "node": true
   }
 }

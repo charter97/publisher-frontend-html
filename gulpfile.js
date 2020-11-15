@@ -1,21 +1,20 @@
 'use strict';
 
-var
-    gulp = require('gulp'),
-    del = require('del'),
-    autoprefixer = require('gulp-autoprefixer'),
-    fileinclude = require('gulp-file-include'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    uglify = require('gulp-uglifyjs'),
-    imagequant = require('imagemin-pngquant'),
-    concat = require('gulp-concat'),
-    sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const del = require('del');
+const autoprefixer = require('gulp-autoprefixer');
+const file_include = require('gulp-file-include');
+const imagemin = require('gulp-imagemin');
+const imagemin_png = require('imagemin-pngquant');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass');
+const uglify = require('gulp-uglifyjs');
+const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('html', function () {
     return gulp.src('app/html/*.html')
-        .pipe(fileinclude())
+        .pipe(file_include())
         .pipe(gulp.dest('dist'));
 });
 
@@ -56,7 +55,7 @@ gulp.task('img', function () {
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
-            une: [imagequant()]
+            une: [imagemin_png()]
         }))
         .pipe(gulp.dest('dist/img'));
 });

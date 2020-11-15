@@ -1,18 +1,20 @@
-// @import "inc/css-resert.scss";
-@import "inc/fonts.scss";
-@import "inc/common.scss";
-@import "inc/header.scss";
-@import "inc/menu-list.scss";
-@import "inc/footer.scss";
-@import "inc/search.scss";
-@import "inc/scroll-button.scss";
-@import "inc/sidebar.scss";
-@import "inc/socials-list.scss";
-@import "inc/contact-form.scss";
-@import "inc/post.scss";
-@import "inc/comments.scss";
-@import "inc/filter.scss";
+// Configuration variables
+$color-black: #000;
+$color-grey-light: #dcdcdc;
+$color-grey-dark: #737373;
+$color-red: #ed1c24;
 
-@import "inc/media.scss";
+$font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-large: 26px;
+$font-color: $color-black;
 
+$spacer: 20px;
 
+// Including library styles
+@import "library/normalize";
+@import "library/fontello";
+
+// Including project styles
+@import "styles/common";

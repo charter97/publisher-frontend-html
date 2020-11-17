@@ -22,7 +22,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('app/sass/*.scss')
+    return gulp.src('app/sass/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))

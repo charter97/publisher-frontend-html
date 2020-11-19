@@ -8,4 +8,13 @@
             .find('ul')
             .toggleClass('category-open');
     });
+
+    $("#btn-search-hide").click(function(){
+        $("#frm-search").hide();
+    });
+
+    $("#btn-search-show").click(function(){
+        $("#frm-search").show();
+    });
+
 })();

@@ -1,0 +1,31 @@
+#frm-search {
+    background-color: lighten($color-grey-light, 10%);
+    border-bottom: 1px solid $color-grey-light;
+    padding: $spacer*2 0;
+    display: none;
+
+    & > div {
+        position: relative;
+
+        & > div {
+            max-width: 800px;
+        }
+    }
+
+    em {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        color: $color-grey-dark;
+        cursor: pointer;
+        font-style: normal;
+        font-size: $font-size-base - 2px;
+        text-transform: uppercase;
+        padding: $spacer/2;
+        display: block;
+
+        &::before {
+            font-size: $font-size-base;
+        }
+    }
+}

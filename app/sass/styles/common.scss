@@ -1,0 +1,10 @@
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1160px + $spacer*2) {
+    .container {
+        margin: 0 $spacer;
+    }
+}

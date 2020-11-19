@@ -11,6 +11,7 @@ $font-size-large: 26px;
 $font-color: $color-black;
 
 $spacer: 20px;
+$top-banner-width: 220px;
 
 // Including library styles
 @import "library/normalize";
@@ -18,4 +19,5 @@ $spacer: 20px;
 
 // Including project styles
 @import "styles/common";
+@import "styles/header";
 @import "styles/footer";

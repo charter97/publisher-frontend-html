@@ -1,3 +1,38 @@
-<header>
-    header
+<header class="container">
+    <div class="top-nav">
+        <div>
+            <a href="#" class="active">прислать новость</a>
+            <a href="#">архив новостей</a>
+        </div>
+        <div>
+            <a href="#">be</a>
+            <a href="#" class="active">ru</a>
+            <a href="#">en</a>
+        </div>
+        <em class="icon-search" id="btn-search"></em>
+    </div>
+    <div class="logo">
+        <a href="#">
+            <img src="img/logo.png" alt="Хартыя '97">
+        </a>
+        <span>18 ноября 2020, среда, 21:35</span>
+    </div>
+    <div class="banners">
+        <a href="#">
+            <img alt="Беларусь как сердце мира" src="https://i.c97.org/hb/400892.jpg?77">
+            <span>Беларусь как сердце мира</span>
+        </a>
+        <a href="#">
+            <img alt="Лукашисты в панике" src="https://i.c97.org/hb/401015.jpg?77">
+            <span>Лукашисты в панике</span>
+        </a>
+        <a href="#">
+            <img alt="Максимальный репост!" src="https://i.c97.org/hb/400761.jpg?77">
+            <span>Максимальный репост!</span>
+        </a>
+    </div>
+    <nav>
+        <div id="btn-category" class="icon-down-open"><span>Рубрики</span></div>
+        @@include('categories.html')
+    </nav>
 </header>

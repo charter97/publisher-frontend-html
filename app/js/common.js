@@ -39,9 +39,9 @@
     $(window).scroll(function () {
         let top = $(window).scrollTop();
         if (top > 100) {
-            $('#btn-scroll').show(300);
+            $('#btn-scroll').show();
         } else {
-            $('#btn-scroll').hide(300);
+            $('#btn-scroll').hide();
         }
     });
 

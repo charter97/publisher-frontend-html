@@ -1,0 +1,16 @@
+#btn-scroll {
+    display: none;
+    position: fixed;
+    right: $spacer;
+    bottom: $spacer;
+    z-index: 1;
+    text-align: center;
+    line-height: $spacer*2 - 2px;
+    border: 1px solid $color-grey-dark;
+    width: $spacer*2 - 2px;
+    height: $spacer*2 - 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: $color-grey-dark;
+    background-color: #fff;
+}

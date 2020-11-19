@@ -17,4 +17,22 @@
         $("#frm-search").show();
     });
 
+    $('.partners').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        draggable: false,
+        responsive: [
+            {
+                breakpoint: 979,
+                settings: { slidesToShow: 4 }
+            },
+            {
+                breakpoint: 768,
+                settings: { slidesToShow: 3 }
+            }
+        ]
+    });
 })();

@@ -16,6 +16,7 @@ $top-banner-width: 220px;
 // Including library styles
 @import "library/normalize";
 @import "library/fontello";
+@import "node_modules/slick-carousel/slick/slick.scss";
 
 // Including project styles
 @import "styles/common";

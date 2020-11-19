@@ -41,7 +41,7 @@ gulp.task('fonts', function () {
 
 gulp.task('scripts', function () {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.slim.min.js',
+        'node_modules/jquery/dist/jquery.min.js',
         'node_modules/slick-carousel/slick/slick.min.js',
         'app/js/common.js'
     ])

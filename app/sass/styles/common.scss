@@ -3,8 +3,33 @@
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 1160px + $spacer*2) {
+@media only screen and (max-width: 1200px ) {
     .container {
         margin: 0 $spacer;
+    }
+}
+
+@media  screen and (min-width:768px) and (max-width: 992px) {
+    header {
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            width: 90px;
+            span{
+                visibility: hidden;
+            }
+        }
+
+        .banners {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
     }
 }

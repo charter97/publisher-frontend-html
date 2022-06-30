@@ -11,9 +11,8 @@ header {
 
         div {
             display: inline-block;
-            margin-right: $spacer*4;
+            margin-right: $spacer * 4;
         }
-
 
         a {
             text-decoration: none;
@@ -49,7 +48,6 @@ header {
         display: block;
         width: 280px;
 
-
         img {
             width: 100%;
             display: block;
@@ -83,8 +81,12 @@ header {
             width: $top-banner-width;
             color: inherit;
 
-            &:first-child { float: left; }
-            &:last-child { float: right; }
+            &:first-child {
+                float: left;
+            }
+            &:last-child {
+                float: right;
+            }
 
             &:hover {
                 color: $color-red;
@@ -118,7 +120,7 @@ header {
         ul {
             list-style-type: none;
             padding: 0 0 $spacer/2 0;
-            margin:0;
+            margin: 0;
             overflow: hidden;
             height: 26px;
 

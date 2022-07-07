@@ -11,15 +11,14 @@ header {
 
         div {
             display: inline-block;
-            margin-right: $spacer*4;
+            margin-right: 80px;
         }
-
 
         a {
             text-decoration: none;
             white-space: nowrap;
             color: $color-grey-dark;
-            padding: $spacer/2;
+            padding: 10px;
             display: inline-block;
 
             &.active {
@@ -48,7 +47,6 @@ header {
         left: 0;
         display: block;
         width: 280px;
-
 
         img {
             width: 100%;
@@ -83,8 +81,12 @@ header {
             width: $top-banner-width;
             color: inherit;
 
-            &:first-child { float: left; }
-            &:last-child { float: right; }
+            &:first-child {
+                float: left;
+            }
+            &:last-child {
+                float: right;
+            }
 
             &:hover {
                 color: $color-red;
@@ -118,7 +120,7 @@ header {
         ul {
             list-style-type: none;
             padding: 0 0 $spacer/2 0;
-            margin:0;
+            margin: 0;
             overflow: hidden;
             height: 26px;
 

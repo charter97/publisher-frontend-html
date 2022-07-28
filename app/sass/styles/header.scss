@@ -79,6 +79,7 @@
         }
     }
 
+
     .logo {
         img {
             height: 70px;
@@ -97,7 +98,10 @@
             text-transform: uppercase;
         }
     }
-
+    .header__block {
+        display: flex;
+        border: 1px solid gainsboro;
+    }
     .header__block-img {
         height: 80px;
         img {
@@ -106,6 +110,7 @@
         }
     }
     .header__block-content {
+        height: 35px;
         text-align: center;
         font-size: $font-size-small;
         text-transform: uppercase;

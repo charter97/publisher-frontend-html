@@ -58,25 +58,30 @@
             display: block;
             font-size: 20px;
             cursor: pointer;
-            position: absolute;
-            top: 0;
-            right: 0;
             color: $color-grey-dark;
-            &:before{
-                
-            }
+        }
+    }
+    .header__wrapper {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0 -30px;
+    }
+    .header__blocks {
+        display: flex;
+        position: relative;
+        width: 70%;
+        &:first-child {
+            width: 30%;
+        }
+        &:last-of-type{
+            justify-content: space-around;
         }
     }
 
     .logo {
-        position: absolute;
-        top: 31px + $spacer;
-        left: 0;
-        display: block;
-        width: 280px;
-
         img {
-            width: 100%;
+            height: 70px;
             display: block;
         }
 
@@ -93,48 +98,19 @@
         }
     }
 
-    .banners {
-        margin: $spacer/2 0 0 400px;
+    .header__block-img {
+        height: 80px;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .header__block-content {
         text-align: center;
         font-size: $font-size-small;
         text-transform: uppercase;
         line-height: 1.2;
         color: $color-grey-dark;
-
-        a {
-            display: inline-block;
-            border: 1px solid $color-grey-light;
-            text-decoration: none;
-            width: $top-banner-width;
-            color: inherit;
-
-            &:first-child {
-                float: left;
-            }
-            &:last-child {
-                float: right;
-            }
-
-            &:hover {
-                color: $color-red;
-            }
-
-            img {
-                display: block;
-                border: none;
-                width: 100%;
-            }
-
-            span {
-                display: table-cell;
-                border-top: 1px solid $color-grey-light;
-                padding: 0 4px;
-                font-size: 11px;
-                height: 34px;
-                width: $top-banner-width - 2px;
-                vertical-align: middle;
-            }
-        }
     }
 
     nav {

@@ -2,9 +2,6 @@
     width: 100%;
     position: relative;
     background-color: white;
-    .container {
-        width: 1200px;
-    }
     .header__line {
         display: flex;
         align-items: center;
@@ -65,7 +62,6 @@
         display: flex;
         width: 100%;
         align-items: center;
-        margin: 0 -30px;
     }
     .header__blocks {
         display: flex;
@@ -170,18 +166,15 @@
 
         #btn-category {
             position: absolute;
-            top: 0;
+            top: 30%;
             right: 0;
-            height: 100%;
-            width: 40px;
+            transform: translateXY(-100%);
             cursor: pointer;
             color: $color-grey-dark;
 
             &::before {
-                margin: 6px 0 0 17px;
                 border-radius: 50%;
                 border: 1px solid $color-grey-dark;
-                padding: 4px;
             }
 
             span {

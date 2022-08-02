@@ -119,33 +119,14 @@
         border-bottom: 1px solid $color-grey-light;
 
         .nav {
-            display: flex;
-            overflow: hidden;
             height: 26px;
-            flex-wrap: wrap;
-            position: relative;
             &.category-open {
                 height: auto;
             }
         }
 
         .nav__item {
-            margin-right: 13px;
             height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: $color-black;
-            font-size: 12px;
-
-            &:hover {
-                color: $color-red;
-            }
         }
 
         #btn-category {

@@ -1,0 +1,25 @@
+nav {
+    .nav {
+        display: flex;
+        overflow: hidden;
+        height: 26px;
+        flex-wrap: wrap;
+        position: relative;
+        
+    }
+    .nav__item {
+        display: flex;
+        margin-right: 13px;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        font-size: 12px;
+        &:hover {
+            color: $color-red;
+        }
+    }
+}

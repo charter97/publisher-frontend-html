@@ -1,39 +1,83 @@
 @@include('search.html')
-<header class="container">
-    <div class="top-nav">
-        <div>
-            <a href="#" class="active">прислать новость</a>
-            <a href="#">архив новостей</a>
+<header class="header">
+    <div class="header__line">
+        <div class="container">
+            <div class="header__line-wrapper">
+                <div class="header__line-block right">
+                    <div class="header__info">
+                        <a href="#" class="header__contact active"
+                            >прислать новость</a
+                        >
+                        <a href="#" class="header__contact">архив новостей</a>
+                    </div>
+                    <div class="lng">
+                        <a href="#" class="lng__link">be</a>
+                        <a href="#" class="lng__link active">ru</a>
+                        <a href="#" class="lng__link">en</a>
+                    </div>
+                    <div class="search">
+                        <em class="icon-search" id="btn-search-show"></em>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="#">be</a>
-            <a href="#" class="active">ru</a>
-            <a href="#">en</a>
+    </div>
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__blocks">
+                <div class="header__logo">
+                    <a class="logo" href="#">
+                        <img src="img/logo.png" alt="Хартыя '97" />
+                        <span>18 ноября 2020, среда, 21:35</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__blocks">
+                <div class="header__block">
+                    <a href="#" class="header__item">
+                        <div class="header__block-img">
+                            <img
+                                alt="Беларусь как сердце мира"
+                                src="https://i.c97.org/hb/400892.jpg?77"
+                            />
+                        </div>
+                        <div class="header__block-content">
+                            <span>Беларусь как сердце мира</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__block">
+                    <a href="#" class="header__item">
+                        <div class="header__block-img">
+                            <img
+                                alt="Беларусь как сердце мира"
+                                src="https://i.c97.org/hb/400892.jpg?77"
+                            />
+                        </div>
+                        <div class="header__block-content">
+                            <span>Беларусь как сердце мира</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__block">
+                    <a href="#" class="header__item">
+                        <div class="header__block-img">
+                            <img
+                                alt="Беларусь как сердце мира"
+                                src="https://i.c97.org/hb/400892.jpg?77"
+                            />
+                        </div>
+                        <div class="header__block-content">
+                            <span>Беларусь как сердце мира</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <em class="icon-search" id="btn-search-show"></em>
     </div>
-    <div class="logo">
-        <a href="#">
-            <img src="img/logo.png" alt="Хартыя '97">
-        </a>
-        <span>18 ноября 2020, среда, 21:35</span>
-    </div>
-    <div class="banners">
-        <a href="#">
-            <img alt="Беларусь как сердце мира" src="https://i.c97.org/hb/400892.jpg?77">
-            <span>Беларусь как сердце мира</span>
-        </a>
-        <a href="#">
-            <img alt="Лукашисты в панике" src="https://i.c97.org/hb/401015.jpg?77">
-            <span>Лукашисты в панике</span>
-        </a>
-        <a href="#">
-            <img alt="Максимальный репост!" src="https://i.c97.org/hb/400761.jpg?77">
-            <span>Максимальный репост!</span>
-        </a>
-    </div>
+    <div class="container">
     <nav>
-        <div id="btn-category" class="icon-down-open"><span>Рубрики</span></div>
         @@include('categories.html')
     </nav>
+</div>
 </header>

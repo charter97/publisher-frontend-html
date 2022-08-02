@@ -1,32 +1,53 @@
-header {
+.header {
+    width: 100%;
     position: relative;
-
-    .top-nav {
-        text-align: right;
-        text-transform: uppercase;
-        font-size: $font-size-small;
-        letter-spacing: 0.1em;
-        position: relative;
-        margin-top: $spacer/2;
-
-        div {
-            display: inline-block;
-            margin-right: 80px;
-        }
-
-        a {
-            text-decoration: none;
-            white-space: nowrap;
-            color: $color-grey-dark;
-            padding: 10px;
-            display: inline-block;
-
-            &.active {
-                color: $color-red;
+    background-color: white;
+    .header__line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        .header__line-block {
+            display: flex;
+            &.right {
+                justify-content: flex-end;
             }
-
-            &:hover {
-                color: $color-black;
+            .header__info {
+                &:first-child {
+                    padding-right: 10px;
+                }
+            }
+            .header__contact {
+                padding-right: 50px;
+                color: $color-grey-dark;
+                &:hover {
+                    color: black;
+                }
+                &.active {
+                    color: #ed1c24;
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+            .lng {
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                .lng__link {
+                    text-transform: uppercase;
+                    color: $color-grey-dark;
+                    padding-right: 5px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    &:hover {
+                        color: black;
+                    }
+                    &.active {
+                        color: red;
+                    }
+                }
             }
         }
 
@@ -34,22 +55,30 @@ header {
             display: block;
             font-size: 20px;
             cursor: pointer;
-            position: absolute;
-            top: 0;
-            right: 0;
             color: $color-grey-dark;
+        }
+    }
+    .header__wrapper {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .header__blocks {
+        display: flex;
+        position: relative;
+        width: 70%;
+        &:first-child {
+            width: 30%;
+        }
+        &:last-of-type {
+            justify-content: space-around;
         }
     }
 
     .logo {
-        position: absolute;
-        top: 31px + $spacer;
-        left: 0;
-        display: block;
-        width: 280px;
-
         img {
-            width: 100%;
+            height: 70px;
             display: block;
         }
 
@@ -65,87 +94,46 @@ header {
             text-transform: uppercase;
         }
     }
-
-    .banners {
-        margin: $spacer/2 0 0 400px;
+    .header__block {
+        display: flex;
+        border: 1px solid gainsboro;
+    }
+    .header__block-img {
+        height: 80px;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .header__block-content {
+        height: 35px;
         text-align: center;
         font-size: $font-size-small;
         text-transform: uppercase;
         line-height: 1.2;
         color: $color-grey-dark;
-
-        a {
-            display: inline-block;
-            border: 1px solid $color-grey-light;
-            text-decoration: none;
-            width: $top-banner-width;
-            color: inherit;
-
-            &:first-child {
-                float: left;
-            }
-            &:last-child {
-                float: right;
-            }
-
-            &:hover {
-                color: $color-red;
-            }
-
-            img {
-                display: block;
-                border: none;
-                width: 100%;
-            }
-
-            span {
-                display: table-cell;
-                border-top: 1px solid $color-grey-light;
-                padding: 0 4px;
-                font-size: 11px;
-                height: 34px;
-                width: $top-banner-width - 2px;
-                vertical-align: middle;
-            }
-        }
     }
 
     nav {
         border-top: 1px solid $color-grey-light;
         border-bottom: 1px solid $color-grey-light;
-        margin-top: $spacer;
-        padding-right: 40px;
-        position: relative;
 
-        ul {
-            list-style-type: none;
-            padding: 0 0 $spacer/2 0;
-            margin: 0;
+        .nav {
+            display: flex;
             overflow: hidden;
             height: 26px;
-
+            flex-wrap: wrap;
+            position: relative;
             &.category-open {
                 height: auto;
             }
         }
 
-        li {
-            display: inline-block;
-            padding-top: $spacer/2;
+        .nav__item {
             margin-right: 13px;
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 17px;
-                left: -10px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                background: $color-grey-dark;
-                z-index: -1;
-            }
+            height: 100%;
+            display: flex;
+            align-items: center;
         }
 
         a {
@@ -164,16 +152,11 @@ header {
             position: absolute;
             top: 0;
             right: 0;
-            height: 100%;
-            width: 40px;
             cursor: pointer;
             color: $color-grey-dark;
-
             &::before {
-                margin: 6px 0 0 17px;
                 border-radius: 50%;
                 border: 1px solid $color-grey-dark;
-                padding: 4px;
             }
 
             span {
